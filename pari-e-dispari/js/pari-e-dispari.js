@@ -7,8 +7,20 @@
 
 
 // chiediamo all'user scegliere se pari o dispari e di inserire un numero da 1 a 5
+const pariODispari = prompt("scegliere tra pari o dispari");
+console.log("hai schelto:", pariODispari);
+
+const numeroUser = parseInt(prompt("inserisci un numero da 1 a 5"));
+console.log("hai scelto il numero:", numeroUser);
 
 // generiamo un numero random (sempre da 1 a 5) per il computer
+function numeroComputer(numMax, numMin) {
+    const numeroGenerato = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
+
+    return numeroGenerato
+}
+
+console.log("il computer ha scelto il numero:",numeroComputer(5, 1));
 
 // facciamo la somma dei due numeri
 
