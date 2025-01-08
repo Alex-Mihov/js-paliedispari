@@ -14,15 +14,16 @@ const numeroUser = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log("hai scelto il numero:", numeroUser);
 
 // generiamo un numero random (sempre da 1 a 5) per il computer
-function numeroComputer(numMax, numMin) {
-    const numeroGenerato = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
-
-    return numeroGenerato
+function numeroComputerRandom() {
+    return Math.floor(Math.random() * 5) + 1;
 }
-
-console.log("il computer ha scelto il numero:",numeroComputer(5, 1));
+const numeroComputer = numeroComputerRandom();
+console.log("il computer ha scelto il numero:", numeroComputer);
 
 // facciamo la somma dei due numeri
+let somma = numeroUser + numeroComputer;
+
+console.log("la somma dei due numeri è:", somma);
 
 // verifichiamo se il numero è paro o dispari 
 
